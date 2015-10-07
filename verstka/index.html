@@ -18,11 +18,23 @@ text-align:center;
 float:left;
 }
 </style>
+<link href="css/bootstrap.min.css" rel="stylesheet">
 <body> 
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Заголовок всплывающей панели" data-content="Основной текст всплывающей панели">Нажмите на кнопку</button>
+    <!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Дополнительный сценарий на языке JavaScript, предназначенный для инициализации компонента Bootstrap "Popovers" -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
 <div >
 
 <div id="wrap" class="wyyyy ">
-	<img src="logo-unispart.png" width="100%" height="100%" alt="" />
+	<img src="images/logo-unispart.png" width="100%" height="100%" alt="" />
 	<p>
 	
 	
@@ -30,13 +42,13 @@ float:left;
 	<input type="search" name="q" placeholder=" Поиск деталей" style="width:100%"</p>
 	<div>
 	<a href="google.com"; </a>
-	<img class="rde" src="1.png" width="50%" height="50%" alt=""  />
-	<img class="rde" src="1.png" width="50%" height="50%" alt=""  />
+	<img class="rde" src="images/1.png" width="50%" height="50%" alt=""  />
+	<img class="rde" src="images/1.png" width="50%" height="50%" alt=""  />
 	</div>
 	<div>
 	<a href="google.com"; </a>
-	<img class="rde" src="1.png" width="50%" height="50%" alt=""  />
-	<img class="rde" src="1.png" width="50%" height="50%" alt=""  />
+	<img class="rde" src="images/1.png" width="50%" height="50%" alt=""  />
+	<img class="rde" src="images/1.png" width="50%" height="50%" alt=""  />
 	</div>
 
 </div>
