@@ -8,6 +8,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'm_unispart_ru.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^else/$',    TemplateView.as_view(template_name="else.html"), name='else'),
+    url(r'^about/$',    TemplateView.as_view(template_name="about.html"), name='about'),
     url(r'^$',          TemplateView.as_view(template_name="index.html"), name='index'),
     url(r'^contacts/$', TemplateView.as_view(template_name="contacts.html"), name='contacts'),
     url(r'^search/$',   views.search, name='search'),
