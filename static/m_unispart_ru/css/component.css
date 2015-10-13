@@ -336,7 +336,9 @@ padding-left:14%;
 padding-top:10%;
 padding-bottom:1%;
 }
-
+#contactsText
+{padding-right:50%;
+}
 .rde
 {
 float:left;
@@ -352,4 +354,68 @@ padding-right:14%;
 padding-left:1%;
 padding-top:2%;
 padding-bottom:1%;
+}#gn-menu li {
+	margin: 0px;
+}
+#li11 {
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+#dovcont {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#img1 {
+	float:left;
+	width: 40%;
+	margin-top: 15%;
+	margin-left: 10%;
+	height: 40%;
+}
+#img2 {
+	float:right;
+	width: 40%;
+	margin-top: 15%;
+	margin-right: 10%;
+	height: 40%;
+}
+#img3 {
+	float:left;
+	width: 40%;
+	margin-top: 1%;
+	margin-left: 10%;
+	height: 40%;
+	margin-bottom: 3%;
+}
+#img4 {
+	float:right;
+	width: 40%;
+	margin-top: 1%;
+	margin-right: 10%;
+	height: 40%;
+	margin-bottom: 3%;
+}
+#img5 {
+	float:left;
+	width: 40%;
+	margin-left: 10%;
+	height: 40%;
+}
+#img6 {
+	float:right;
+	width: 40%;
+	margin-right: 10%;
+	height: 40%;
+
+}
+#emd{
+	width:100%;
+	
+	}.no-js body #end a {
+	font-size: 18px;
+	text-align: center;
 }
