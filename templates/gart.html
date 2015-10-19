@@ -1,4 +1,33 @@
-<h1>Наименование: {{ art.name }}</h1>
-<h1>Артикул: {{ art.art }}</h1>
-<h1>Колличество: {{ art.kol }}</h1>
-<h1>Стоимость: {{ art.st }}</h1>
+{% extends "base.html" %}
+{% block content %}
+    <div class="pavl">
+        <h2>Результаты поиска: </h2>
+            <div style="padding: 5% 5% 10% 5%;  max-height: 100%; font-size: 24px">
+                <table width="100%" border="1" cellpadding="4" cellspacing="0" style="border: #000000 1px solid; border-collapse: collapse; height: 675px;">
+                    <tr>
+                        <td align="center" nowrap="off" style="background-color:#4D74A3; color: #FFFFFF; width: 200px;" \>Артикул</td>
+                        <td align="center" nowrap="off" style="background-color:#edf2f5; color: #000000;"	onmouseover="this.style.backgroundColor='#C5D9F1';"
+                        onmouseout="this.style.backgroundColor='#edf2f5';"><strong>{{ g.product_name_rus }}</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center" nowrap="off" style="background-color:#4D74A3; color: #FFFFFF;">Наименование</td>
+                        <td align="center" style="background-color:#edf2f5; color: #000000;"	onmouseover="this.style.backgroundColor='#C5D9F1';"
+                        onmouseout="this.style.backgroundColor='#edf2f5';"><strong>{{ g.product_id }}</strong><br /></td>
+                    </tr>
+                    <tr>
+                        <td align="center" nowrap="off" style="background-color:#4D74A3; color: #FFFFFF;">Наличие</td>
+                        <td align="center" style="background-color:#edf2f5; color: #000000;"	onmouseover="this.style.backgroundColor='#C5D9F1';"
+                        onmouseout="this.style.backgroundColor='#edf2f5';"><strong>{{ g.product_amount }}</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center" nowrap="off" style="background-color:#4D74A3; color: #FFFFFF;">Стоимость руб.</td>
+                        <td align="center" style="background-color:#edf2f5; color: #000000;"	onmouseover="this.style.backgroundColor='#C5D9F1';"
+                        onmouseout="this.style.backgroundColor='#edf2f5';"><b>{{ g.product_price_1 }}</b></td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+{% endblock %}
+
+
+

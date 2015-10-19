@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Результаты поиска {{ sout }}</h1>
+    <h2 style="padding: 0% 2% 0% 2%">Результаты поиска: </h2>
+    <h3>Наименование: {{ g.product_id }}</h3>
+    <h3>Артикул: {{ g.product_name_rus }}</h3>
+    <h3>Колличество: {{ g.product_amount }}</h3>
+    <h3>Стоимость: {{ g.product_price_1 }}</h3>
 {% endblock %}

@@ -372,14 +372,14 @@ padding-bottom:1%;
 #img1 {
 	float:left;
 	width: 40%;
-	margin-top: 15%;
+	margin-top: 3%;
 	margin-left: 10%;
 	height: 40%;
 }
 #img2 {
 	float:right;
 	width: 40%;
-	margin-top: 15%;
+	margin-top: 3%;
 	margin-right: 10%;
 	height: 40%;
 }
@@ -418,4 +418,61 @@ padding-bottom:1%;
 	}.no-js body #end a {
 	font-size: 18px;
 	text-align: center;
+}
+.navbar-brand2{
+	float:left;
+	height:50px;
+	padding:5px 5px;
+	}
+.input-group{
+	
+	padding:8px 2px;
+	padding-right:5%;
+	
+	}
+.no-js body .navbar.navbar-default .bottombar-inner .container .nav .btn-group .btn.btn-default {
+	text-align: center;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.no-js body .navbar.navbar-default .bottombar-inner .container a {
+	text-align: center;
+}
+.container {
+	
+  margin:0 25% 0 25%;
+  width:50%;
+}
+
+	
+	}.no-js body .navbar.navbar-default .bottombar-inner .container p {
+	text-align: center;
+}
+
+.vyrovnyat {
+	text-align: center; /* выровнять текст и картинки по горизонтали */
+	height: 100%;
+	font-size: 100%;
+}
+.no-js body .navbar.navbar-default .vyrovnyat a {
+	font-size: 36px;
+}
+.no-js body .navbar.navbar-default .vyrovnyat .btn-group.btn-group-justified .btn-group .btn.btn-default {
+	height: 100%;
+}
+
+.nonconf{
+	font-family: Verdana;
+	text-align: center;
+	font-size: medium;
+}
+.alt2{ margin: 0px;  padding: 6px;}
+.smallfont{margin-bottom:2px; color: wheat}
+.spoil{margin:10px; margin-top:5px;}
+
+.pavl {
+	padding: 0% 5% 0% 5%;
+}
 }

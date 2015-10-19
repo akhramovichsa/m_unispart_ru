@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>{% block title %}UNISPART.RU{% endblock %}</title>
-    {% block meta %}{% endblock %}
-    {% include "include/head.html" %}
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UNISPART - ИНТЕРНЕТ-МАГАЗИН АВТОЗАПЧАСТЕЙ</title>
+<meta name="keywords" content="запчасти киа, запчасти hyundai, запчасти kia, запчасти хундай, besf1ts, запчасти besf1ts, запчасти MOBIS,Аккумуляторы,Besf1ts,besfits,Besf1ts, запчасти дэу, запчасти ssang yong, интернет-магазин автозапчастей, для корейских автомобилей, запчасти для акцент, запчасти соната, запчасти солярис, запчасти элантра, запчасти портер, запчасти для рио, запчасти для сид, запчасти для соренто, запчасти для спортэйдж" />
+<meta name="description" content="" />
+		<meta name="author" content="Pavlov P. Alexei IrishGreenHedgehog@gmail.com" />
+		<link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../static/m_unispart_ru/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/m_unispart_ru/css/bootstrap.min.css" />
+
+		<script src="../../static/m_unispart_ru/js/modernizr.custom.js"></script>
+        <!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
+    <script src="../../static/m_unispart_ru/js/bootstrap.min.js"></script>
+    <!-- Дополнительный сценарий на языке JavaScript, предназначенный для инициализации компонента Bootstrap "Popovers" -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
 </head>
 <body>
 <div id="wrap">
+	<nav class="navbar navbar-default">
+        <table style="width: 100%; max-width: 100%">
+        <tr>
+                <td style=""><a class="navbar-brand2" href="../../"><img src="../../static/m_unispart_ru/images/logo-unispart.svg" width=100% height=200%/></a></td>
+                <td style="float: right"><a class="navbar-brand2" href="../../"><img src="../../static/m_unispart_ru/images/index_slogan.jpg" style="padding: 2% 0% 0% 0%;" width=100% height=200%  /></a></td>
+        </tr>
+        </table>
+            <div style="text-align: center;">
+                <h4 style="padding: 7% 0% 0% 0%"><span style="color: rgb(0, 0, 128);"><span style="font-family: Tahoma;"><strong>ИНТЕРНЕТ-МАГАЗИН АВТОЗАПЧАСТЕЙ
+                    тел: +7 926 124 35 57</strong></span></span></h4>
+            </div>
+             <div class="input-group">
+                 <form action="/gart/" method="get">
+                     <input type="search" class="form-control" name="q" value="{{ search }}" placeholder="Введите арктикул детали">
+                 </form>
+                 <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Поиск</button>
+                 </span>
+             </div><!-- /input-group -->
+
+    </nav>
     {# ----------------------------------------------------- #}
     {#                         ШАПКА                         #}
     {# ----------------------------------------------------- #}
     {#% include "include/top.html" %#}
 
-    <div class="container">
+    <div>       {# class="container" #}
         <div class="row">
             {# ----------------------------------------------------- #}
             {#                 КОНТЕНТ ОБЫЧНЫХ СТРАНИЦ               #}
@@ -28,6 +67,15 @@
         </div> <!-- /row -->
     </div> <!-- /container -->
 </div> <!-- /wrap -->
+<div class="navbar navbar-default">
+
+
+          <div class="vyrovnyat">
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+
+  <div class="btn-group" role="group">
+    <a href="http://www.unispart.ru/"><button type="button" class="btn btn-default" style="font-size: 18px">Полная Версия</button></a>
+  </div>
 {# ----------------------------------------------------- #}
 {#                         НИЗ                           #}
 {# ----------------------------------------------------- #}

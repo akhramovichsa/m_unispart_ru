@@ -1,126 +1,94 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>UNISPART - ИНТЕРНЕТ-МАГАЗИН АВТОЗАПЧАСТЕЙ</title>
-<meta name="keywords" content="запчасти киа, запчасти hyundai, запчасти kia, запчасти хундай, besf1ts, запчасти besf1ts, запчасти MOBIS,Аккумуляторы,Besf1ts,besfits,Besf1ts, запчасти дэу, запчасти ssang yong, интернет-магазин автозапчастей, для корейских автомобилей, запчасти для акцент, запчасти соната, запчасти солярис, запчасти элантра, запчасти портер, запчасти для рио, запчасти для сид, запчасти для соренто, запчасти для спортэйдж" />
-<meta name="description" content="" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../static/m_unispart_ru/css/component.css" />
-		<link rel="stylesheet" type="text/css" href="../static/m_unispart_ru/css/bootstrap.min.css" />
-		
-		<script src="../static/m_unispart_ru/js/modernizr.custom.js"></script>
-        <!-- 2. Подключаем библиотеку jQuery, необходимую для работы скриптов Bootstrap 3 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- 3. Подключаем скомпилированный и минимизированный файл JavaScript платформы Bootstrap 3 -->
-    <script src="../static/m_unispart_ru/js/bootstrap.min.js"></script>
-    <!-- Дополнительный сценарий на языке JavaScript, предназначенный для инициализации компонента Bootstrap "Popovers" -->
-    <script>
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
-    </script>
-    
-<script src="../static/m_unispart_ru/js/modernizr.custom.js"></script>
-	</head>
-	<body>
-    
-		<div class="container">
-			<ul id="gn-menu" class="gn-menu-main">
-				<li class="gn-trigger">
-					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
-					<nav class="gn-menu-wrapper">
-						<div class="gn-scroller">
-							<ul class="gn-menu">
-								<li class="gn-search-item">
-									<input placeholder="Поиск" type="search" class="gn-search">
-									<a href="=search" class="gn-icon gn-icon-search"><span>Search</span></a>
-								</li>
-								<li>
-																		<ul class="gn-submenu">
-										
-										
-									</ul>
-								</li>
-								<li><a href="http://unispart.ru/catalog/" class="gn-icon gn-icon-cog">Реквизиты</a></li>
-								<li><a href="contacts" class="gn-icon gn-icon-help">О компании</a></li>
-								<li>
-									
-									<ul class="gn-submenu">
-										<li><a class="gn-icon gn-icon-article">Каталог</a></li>
-										
-									</ul>
-								</li>
-							</ul>
-						</div><!-- /gn-scroller -->
-					</nav>
-				</li>
-                <li id="li11"><img src="../static/m_unispart_ru/images/logo-unispart.svg" width=100% height=100% alt="" /></li>
-				<li id=""><img src="../static/m_unispart_ru/images/logo-unispart2.svg" width=100% height=100% alt="" /></li>
-			</ul>
-	</div><!-- /container -->
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="spoil" style="text-align: center">
+        <div class="smallfont"><input type="button" style="background-color: #27265d; width: 400px; height: 50px; max-height: 5%; max-width: 50%" value="Информация о нашем интернет-магазине" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Информация о нашем интернет-магазине'; }"/>
+    </div>
+        <div class="alt2">
+            <div style="display: none; padding: 0% 5% 0% 5%">
+    <p style="text-align: justify; ">В нашем интернет-магазине запчастей Вы можете заказать и купить оригинальные запчасти, а так же их неоригинальные аналоги для корейских автомобилей:</p>
+<p style="text-align: justify; ">Hyundai: Гетц(Getz), Акцент (Accent), Верна (Verna), Соната (Sonata), Элантра (Elantra), Туксон(Tuscon), Санта фе (Santa Fe), Старекс (Starex), Матрикс (Matrix), i20, i30, ix35, ix55, Портер (Porter),Каунти (County), HD и другие.</p>
+<p style="text-align: justify; ">KIA: Пиканто (Picanto), РИО (RIO), Сид (Ceed), Серато (Cerato), Маджентис (Magentis), Венга(Venga), Каренс (Carens), Соул (Sould), Спортейдж (Sportage), Карнивал (Carnival), Соренто(Sorento), Мохаве (Mohave, Borego), Преджио (Pregio), Беста (Besta), Авелла (Avella), Кларус(Clarus), Бонго (Bongo, K-2500, K-2700), и другие.</p>
+<p style="text-align: justify; ">Daewoo: Матиз (Matiz), Нексия (Nexia), Нубира (Nubira), Эсперо (Espero), Ланос (Lanos), Леганза(Leganza) и другие.</p>
+<p style="text-align: justify; ">GM DAT: Авео (Aveo), Лачетти (Lacetti), Круз (Cruze), Эпика (Epica), Каптива (Captiva) и другие.</p>
+<p style="text-align: justify; ">Все оригинальные запчасти киа, запчасти хундай, запчасти дэу, запчасти gm имеют сертификат соответствия и поставляются с центральных складов официальных поставщиков – компаний MOBISParts CIS и GM.</p>
+<p style="text-align: justify; ">Помимо поставки оригинальных запасных частей мы являемся официальным дистрибьютором компании MOBIS Parts CIS (Hyundai MOBIS) и обеспечивает реализацию запасных частей марки BESF1TS для автомобилей Hyundai и KIA.</p>
+<p style="text-align: justify; ">Запчасти Besf1ts обладают качеством оригинального продукта, так как производятся под строгим контролем компании MOBIS, но значительно отличается по цене. Вы можете купить амортизаторы Besfits, фильтр масляный Besfits, фильтр воздушный Besfits, фильтр салонный Besfits, фильтр топливный Besfits, аккумуляторы Besfits, тормозные колодки Besfits, тормозные диски Besfits, ремень ГРМ Besfits, элементы выхлопной системы Besfits, свечи зажигания и накаливания Besfits, радиаторы Besf1ts, ролики BESF1TS, комплекты ТО Besfits.</p>
+    </div>
+        </div>
+    </div>
+
+    <div>
+        <p style="text-align: center"><img src="../static/m_unispart_ru/images/shema-proezda.png" class="img-thumbnail"  width="95%" height="95%"/></p>
 	</div>
+    <div  class="pavl">
+                    <div id="content_title">
+				        <h1>					       Способы оплаты
+				        </h1>
+				    </div>
+				<div id="content">
+                    <p><span style="color: rgb(64, 64, 64); text-align: center; font-family: tahoma; ">Уважаемый Покупатель, в интернет-магазине автозапчастей UNISPART возможны следующие формы оплаты:</span></p>
+                    <ol  style=" color: rgb(64, 64, 64) ; font-family: tahoma; font-size: 13px;  ">
+                        <li><span style="font-size: medium; "><b>Наличный расчет (оплата наличными при получении заказа).</b>&nbsp;
+                            <br>Оплата за запасные части и аксессуары для иномарок принимается только в рублях, оформляется кассовый и товарный чек.&nbsp;<br>&nbsp;</span></li>
+                        <li><span style="font-size: medium; "><b>Безналичный расчет.</b><br>Банковский перевод для юридических лиц.&nbsp;<br>Банковский перевод для физических лиц.&nbsp;<br>&nbsp;</span></li>
+                        <li><span style="font-size: medium; "><b>Оплата через терминалы QIWI</b><br>Оплата осуществляется через терминалы QIWI.<br>Совершайте покупки современным и удобным способом!</span></li>
+                    </ol>
 
-</div>
-<div>
-<div id="img1">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/hyundai.svg" width="100%" height="100%" alt="..."></a>
-       </a></div>
-    <div id="img2">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/kia.svg" width="100%" height="100%" alt="..."></a>
-       </a>
-</div>
+                </div>
+    </div>
+    <div  class="pavl">
+		         	<div id="content_title">
+				        <h1>					        Доставка
+				        </h1>
+				    </div>
+				<div id="content">
+                    <p><span style="font-size: medium; "><strong>Информация о доставке товара&nbsp;</strong></span></p>
+                    <p><span style="font-size: medium; "><b style="color: rgb(64, 64, 64); font-family: tahoma; font-size: 13px; text-align: justify; "><font color="red">Доставка любого заказа от 5000 руб. производится бесплатно по Москве! При заказе на сумму меньше 5000 руб. доставка платная - 500 руб.</font></b><span style="font-family: Arial; ">&nbsp;</span><span style="font-family: Arial; ">  </span><span style="font-family: Tahoma; "> </span>&nbsp;</span></p>
+                    <p><span style="font-size: medium; "> <span style="font-family: Arial; "> </span>      <span style="font-family: Arial; ">  </span> <strong><span style="color: rgb(64, 64, 64); text-align: justify; ">Внимание!</span></strong><span style="font-family: Arial; ">&nbsp;</span><span style="font-family: Arial; ">  </span><span style="font-family: Tahoma; "> </span>&nbsp;&nbsp;</span></p>
+                    <p><span style="font-size: medium; "><b><font color="red">Отправка заказанного товара в регионы осуществляется только по предоплате, минимальная сумма заказа составляет 5000 руб.</font></b>&nbsp; </span><span style="font-size: medium; "> &nbsp;</span></p>
+                    <p><span style="font-size: medium; color: rgb(64, 64, 64); font-family: tahoma; text-align: justify; ">Доставка заказов осуществляется транспортными компаниями ПЭК или Байкал Сервис по выбору Клиента во все обслуживаемые города Российской Федерации. &nbsp;</span></p>
+                    <p><span style="font-size: medium; color: rgb(64, 64, 64); font-family: tahoma; text-align: justify; ">За дополнительной информацией обращайтесь по телефонам 8 (926) 124 3557 или по e-mail: gerra@unispart.ru</span></p>
+                </div>
+    </div>
+    <div  class="pavl">
+                    <div id="content_title">
+				        <h1>					       Магазин &quot;BESF1TS&quot;
+				        </h1>
+				    </div>
+        <div id="content">
+            <p><span style="font-size: medium">50 км МКАД (развязка Очаково-Заречье)</span></p>
+            <p><span style="font-size: medium">143085, М.О., п. Заречье, ул. Торговая, стр. 1, Торговый Комплекс &quot;Ангар Авто&quot;, пав. &quot;Вesf1ts&quot;.</span></p>
+            <p><span style="font-size: medium">Тел.: +7 (926) 124 35 57<</span></p>
+            <span style="font-size: medium">E-mail: </span><a href="mailto:information@unispart.ru"><span style="font-size: medium">olvit@list.ru</span></a></p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <td>
+		         	<div class="pavl">
+                        <div id="content_title">
+				            <h1>
+                                Реквизиты
+				            </h1>
+                        </div>
+				<div id="content">
+                    <p class="nonconf">Индивидуальный Предприниматель</p>
+                    <p class="nonconf">Герасимов Олег Витальевич</p>
+                    <p class="nonconf">121108, г Москва, ул. Герасима Курина, 4-1-25</p>
+                    <p class="nonconf">ИНН:773111480538</p>
+                    <p class="nonconf">ОГРНИП:310774612500734</p>
+                    <p class="nonconf">Расчетный счет:</p>
+                    <p class="nonconf">№40802810000120021608</p>
+                    <p class="nonconf">В КБ «ЮНИАСТРУМ БАНК» (ООО)</p>
+                    <p class="nonconf">К/с : 30101810600000000184</p>
+                    <p class="nonconf">БИК: 044585184</p>
+                    <p class="nonconf"><span lang="EN-US">&nbsp;</span></span></span></p>
+                    <p class="nonconf"><span style="color: red;">Фактический адрес:</span></p>
+                    <p class="nonconf"><span style="color: red;">143085, Московская область, Одинцовский район, п. Заречье, ул. Торговая, стр.1 ТК «Ангар Авто», пав. В3-12</span></p>
+                    <p class="nonconf"><span style="color: red;">(50 км. МКАД, развязка Очаково-Заречье)</span></p>
+                    <p class="nonconf"><span style="color: red;"></span></p>
+                    <p class="nonconf"><span lang="EN-US">&nbsp; &nbsp; e-mail:</span><span style="font-size: 20pt; font-family: Arial, sans-serif;"><a href="mailto:%D0%BElvit@list.ru"><span style="font-family: Verdana;"><span style="font-size: medium;">о<span lang="EN-US">lvit@list.ru</span></span></span></a></span><span style="font-size: 20pt; font-family: Arial, sans-serif;" lang="EN-US"><o:p></o:p></span></p>
+                </div>
+    </td>
 
-<div id="img5">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/chevrolet.svg" width="100%" height="100%" alt="..."></a>
-       </a></div>
-    <div id="img6">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/daewoo.svg" width="100%" height="100%" alt="..."></a>
-       </a>
-</div>
-<div id="img5">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/SsangYong.svg" width="100%" height="100%" alt="..."></a>
-       </a></div>
-    <div id="img6">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/lifan.svg" width="100%" height="100%" alt="..."></a></
-       </a>
-</div>
-<div id="img5">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/audi.svg" width="100%" height="100%" alt="..."></a>
-       </a></div>
-    <div id="img6">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/mercedes.svg" width="100%" height="100%" alt="..."></a>
-       </a>
-</div>
-<div id="img3">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/volkswagen.svg" width="100%" height="100%" alt="..."></a>
-       </a></div>
-    <div id="img4">
- <a href="#" class="thumbnail" >
- <img src="../static/m_unispart_ru/images/models/bmw.svg" width="100%" height="100%" alt="..."></a>
-       </a> </div>
-<div id="end">
-
-
-  <a href="#"> </a></li>
- <a href="http://unispart.ru/">Полная версия</a></li>
-</div>
-	<script src="../static/m_unispart_ru/js/classie.js"></script>
-		<script src="../static/m_unispart_ru/js/gnmenu.js"></script>
-		<script>
-			new gnMenu( document.getElementById( 'gn-menu' ) );
-		</script>
-	</body>
-</html>
+{% endblock %}
